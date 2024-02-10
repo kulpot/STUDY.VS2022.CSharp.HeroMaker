@@ -33,7 +33,8 @@ namespace HeroMaker
             abilities[6] = chk_water_breath.Checked;
             abilities[7] = chk_timecontrol.Checked;
 
-            string status_message = "You have selected the following abilities:";
+            string status_message = "Your new hero is " + txt_name.Text + 
+                " You have selected the following abilities: ";
 
             if (abilities[0])
                 status_message += "Fly, ";
@@ -51,7 +52,8 @@ namespace HeroMaker
                 status_message += "Water Breathing, ";
             if (abilities[7])
                 status_message += "Time Control, ";
- 
+
+            MessageBox.Show(status_message);
         }
     }
 }
