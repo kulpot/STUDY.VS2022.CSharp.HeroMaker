@@ -34,12 +34,12 @@
             this.chk_fly = new System.Windows.Forms.CheckBox();
             this.chk_xray = new System.Windows.Forms.CheckBox();
             this.chk_invisible = new System.Windows.Forms.CheckBox();
-            this.chk_energy = new System.Windows.Forms.CheckBox();
             this.chk_luck = new System.Windows.Forms.CheckBox();
             this.chk_fart = new System.Windows.Forms.CheckBox();
             this.chk_water_breath = new System.Windows.Forms.CheckBox();
             this.chk_timecontrol = new System.Windows.Forms.CheckBox();
             this.btn_create = new System.Windows.Forms.Button();
+            this.chk_energy = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,11 +61,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.chk_energy);
             this.groupBox1.Controls.Add(this.chk_luck);
             this.groupBox1.Controls.Add(this.chk_fart);
             this.groupBox1.Controls.Add(this.chk_water_breath);
             this.groupBox1.Controls.Add(this.chk_timecontrol);
-            this.groupBox1.Controls.Add(this.chk_energy);
             this.groupBox1.Controls.Add(this.chk_invisible);
             this.groupBox1.Controls.Add(this.chk_xray);
             this.groupBox1.Controls.Add(this.chk_fly);
@@ -105,16 +105,6 @@
             this.chk_invisible.TabIndex = 2;
             this.chk_invisible.Text = "Invisibility";
             this.chk_invisible.UseVisualStyleBackColor = true;
-            // 
-            // chk_energy
-            // 
-            this.chk_energy.AutoSize = true;
-            this.chk_energy.Location = new System.Drawing.Point(6, 97);
-            this.chk_energy.Name = "chk_energy";
-            this.chk_energy.Size = new System.Drawing.Size(95, 17);
-            this.chk_energy.TabIndex = 3;
-            this.chk_energy.Text = "Absorb Energy";
-            this.chk_energy.UseVisualStyleBackColor = true;
             // 
             // chk_luck
             // 
@@ -164,6 +154,17 @@
             this.btn_create.TabIndex = 3;
             this.btn_create.Text = "Create Hero";
             this.btn_create.UseVisualStyleBackColor = true;
+            this.btn_create.Click += new System.EventHandler(this.btn_create_Click);
+            // 
+            // chk_energy
+            // 
+            this.chk_energy.AutoSize = true;
+            this.chk_energy.Location = new System.Drawing.Point(6, 97);
+            this.chk_energy.Name = "chk_energy";
+            this.chk_energy.Size = new System.Drawing.Size(95, 17);
+            this.chk_energy.TabIndex = 4;
+            this.chk_energy.Text = "Absorb Energy";
+            this.chk_energy.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -195,8 +196,8 @@
         private System.Windows.Forms.CheckBox chk_fart;
         private System.Windows.Forms.CheckBox chk_water_breath;
         private System.Windows.Forms.CheckBox chk_timecontrol;
-        private System.Windows.Forms.CheckBox chk_energy;
         private System.Windows.Forms.Button btn_create;
+        private System.Windows.Forms.CheckBox chk_energy;
     }
 }
 

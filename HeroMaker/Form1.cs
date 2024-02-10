@@ -20,9 +20,20 @@ namespace HeroMaker
             InitializeComponent();
         }
 
-        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        private void btn_create_Click(object sender, EventArgs e)
         {
+            bool[] abilities = {false, false, false, false, false, false, false, false };
 
+            abilities[0] = chk_fly.Checked;
+            abilities[1] = chk_xray.Checked;
+            abilities[2] = chk_invisible.Checked;
+            abilities[3] = chk_energy.Checked;
+            abilities[4] = chk_luck.Checked;
+            abilities[5] = chk_fart.Checked;
+            abilities[6] = chk_water_breath.Checked;
+            abilities[7] = chk_timecontrol.Checked;
+
+            string status_message = "You have selected the following abilities:";
         }
     }
 }
