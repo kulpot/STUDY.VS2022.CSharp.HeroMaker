@@ -141,9 +141,9 @@
             this.chk_timecontrol.AutoSize = true;
             this.chk_timecontrol.Location = new System.Drawing.Point(126, 97);
             this.chk_timecontrol.Name = "chk_timecontrol";
-            this.chk_timecontrol.Size = new System.Drawing.Size(88, 17);
+            this.chk_timecontrol.Size = new System.Drawing.Size(85, 17);
             this.chk_timecontrol.TabIndex = 4;
-            this.chk_timecontrol.Text = "Timer Control";
+            this.chk_timecontrol.Text = "Time Control";
             this.chk_timecontrol.UseVisualStyleBackColor = true;
             // 
             // btn_create

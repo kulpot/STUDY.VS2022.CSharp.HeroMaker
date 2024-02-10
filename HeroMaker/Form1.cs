@@ -34,6 +34,24 @@ namespace HeroMaker
             abilities[7] = chk_timecontrol.Checked;
 
             string status_message = "You have selected the following abilities:";
+
+            if (abilities[0])
+                status_message += "Fly, ";
+            if (abilities[1])
+                status_message += "xRay Vision, ";
+            if (abilities[2])
+                status_message += "Invisibility, ";
+            if (abilities[3])
+                status_message += "Absorb Energy, ";
+            if (abilities[4])
+                status_message += "Extreme Luck, ";
+            if (abilities[5])
+                status_message += "Explosive Farts, ";
+            if (abilities[6])
+                status_message += "Water Breathing, ";
+            if (abilities[7])
+                status_message += "Time Control, ";
+ 
         }
     }
 }
